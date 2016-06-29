@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>插入排序 | 简介</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.6">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="./algorithms.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.1"
+        data-chapter-title="插入排序"
+        data-filepath="insertion_sort.md"
+        data-basepath="."
+        data-revision="Wed Jun 29 2016 10:04:48 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="iOS.html">
+            
+                
+                    <a href="./iOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        iOS
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="UIImageRenderingMode.html">
+            
+                
+                    <a href="./UIImageRenderingMode.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        UIImageRenderingMode
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="UITabBarController.html">
+            
+                
+                    <a href="./UITabBarController.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        UITabBarController
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="UINavigationController.html">
+            
+                
+                    <a href="./UINavigationController.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        UINavigationController
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="Git.html">
+            
+                
+                    <a href="./Git.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Git
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="yuan_cheng_deng_lu.html">
+            
+                
+                    <a href="./yuan_cheng_deng_lu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        远程登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="algorithms.html">
+            
+                
+                    <a href="./algorithms.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        算法
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="4.1" data-path="insertion_sort.html">
+            
+                
+                    <a href="./insertion_sort.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        插入排序
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >简介</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x63D2;&#x5165;&#x6392;&#x5E8F;">&#x63D2;&#x5165;&#x6392;&#x5E8F;</h1>
+<p>&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x7684;&#x539F;&#x7406;&#x53EF;&#x4EE5;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#x6765;&#x8BB2;&#xFF1A;&#x60F3;&#x8C61;&#x4E00;&#x4E0B;&#x4F60;&#x62FF;&#x5230;&#x4E00;&#x53E0;&#x65E0;&#x5E8F;&#x7684;&#x7EB8;&#x724C;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x4ECE;&#x7B2C;&#x4E8C;&#x5F20;&#x7EB8;&#x724C;&#x5F00;&#x59CB;&#x7ED9;&#x5B83;&#x6392;&#x5E8F;&#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x3002;
+&#x7EB8;&#x724C;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x5206;&#x6790;&#xFF08;&#x4ECE;&#x5C0F;&#x5230;&#x5927;&#xFF09;&#xFF1A;&#x9996;&#x5148;&#x4ECE;&#x7B2C;2&#x5F20;&#x724C;&#x5F00;&#x59CB;&#xFF0C;&#x4E0E;&#x524D;&#x4E00;&#x5F20;&#x5BF9;&#x6BD4;&#xFF0C;&#x5982;&#x679C;&#x524D;&#x4E00;&#x5F20;&#x8F83;&#x5927;&#xFF0C;&#x90A3;&#x4E48;&#x628A;&#x524D;&#x4E00;&#x5F20;&#x5411;&#x540E;&#x653E;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#xFF0C;&#x628A;&#x7B2C;2&#x5F20;&#x63D2;&#x5165;&#x7B2C;1&#x5F20;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x7136;&#x540E;&#x770B;&#x7B2C;3&#x5F20;&#xFF0C;&#x4E0E;&#x7B2C;2&#x5F20;&#x6BD4;&#x8F83;&#xFF0C;&#x5982;&#x679C;&#x7B2C;2&#x5F20;&#x5927;&#xFF0C;&#x90A3;&#x4E48;&#x7B2C;2&#x5F20;&#x5411;&#x540E;&#x79FB;&#x52A8;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#xFF0C;&#x7136;&#x540E;&#x6BD4;&#x8F83;&#x7B2C;1&#x5F20;&#x548C;&#x7B2C;3&#x5F20;&#xFF0C;&#x5982;&#x679C;&#x7B2C;3&#x5F20;&#x5927;&#xFF0C;&#x90A3;&#x4E48;&#x63D2;&#x5165;&#x7B2C;2&#x5F20;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x5426;&#x5219;&#xFF0C;&#x628A;&#x7B2C;1&#x5F20;&#x79FB;&#x5230;&#x7B2C;2&#x5F20;&#x4F4D;&#x7F6E;&#xFF0C;&#x7B2C;3&#x5F20;&#x6700;&#x7EC8;&#x7B2C;1&#x4E2A;&#x4F4D;&#x7F6E;&#xFF0C;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#x5373;&#x662F;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x3002;swift&#x5B9E;&#x73B0;&#x7B97;&#x6CD5;&#x5982;&#x4E0B;&#xFF0C;</p>
+<p>&#x7531;&#x5C0F;&#x5230;&#x5927;&#x6392;&#x5E8F;&#xFF1A;</p>
+<pre><code>func insertionSortBigger(var array: Array&lt;Int&gt;) -&gt; Array&lt;Int&gt;{
+    for(var j = 1 ; j&lt;array.count ; j++){//&#x4ECE;&#x7B2C;&#x4E8C;&#x4E2A;&#x5F00;&#x59CB;&#x5411;&#x524D;&#x5BF9;&#x6BD4;&#x63D2;&#x5165;
+        let key = array[j] //&#x8BB0;&#x5F55;&#x8981;&#x6BD4;&#x8F83;&#x7684;&#x503C;
+        var i = j-1
+        while(i&gt;=0 &amp;&amp; array[i]&gt;key){//&#x5982;&#x679C;key&#x8F83;&#x5C0F;&#xFF0C;&#x90A3;&#x4E48;&#x73B0;&#x6709;&#x7684;&#x4F4D;&#x7F6E;&#x5411;&#x540E;&#x79FB;&#xFF0C;&#x4E3A;key&#x7A7A;&#x51FA;&#x4F4D;&#x7F6E;
+            array[i+1] = array[i] //&#x79FB;&#x4F4D;
+            i--
+        }
+        array[i+1] = key
+    }
+    return array
+}
+</code></pre><p>&#x7531;&#x5927;&#x5230;&#x5C0F;&#x6392;&#x5E8F;&#xFF1A;</p>
+<pre><code>func insertionSortSmaller(var array: Array&lt;Int&gt;) -&gt; Array&lt;Int&gt;{
+    for(var j = 1 ; j&lt;array.count ; j++){//&#x4ECE;&#x7B2C;&#x4E8C;&#x4E2A;&#x5F00;&#x59CB;&#x5411;&#x524D;&#x5BF9;&#x6BD4;&#x63D2;&#x5165;
+        let key = array[j] //&#x8BB0;&#x5F55;&#x8981;&#x6BD4;&#x8F83;&#x7684;&#x503C;
+        var i = j-1
+        while(i&gt;=0 &amp;&amp; array[i]&lt;key){//&#x5982;&#x679C;key&#x8F83;&#x5927;&#xFF0C;&#x90A3;&#x4E48;&#x73B0;&#x6709;&#x7684;&#x4F4D;&#x7F6E;&#x5411;&#x540E;&#x79FB;&#xFF0C;&#x4E3A;key&#x7A7A;&#x51FA;&#x4F4D;&#x7F6E;
+            array[i+1] = array[i] //&#x79FB;&#x4F4D;
+            i--
+        }
+        array[i+1] = key
+    }
+    return array
+}
+</code></pre><p>&#x601D;&#x8003;&#x4E0B;&#x9762;&#x7684;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x6709;&#x4F55;&#x4E0D;&#x6070;&#x5F53;&#xFF1A;</p>
+<pre><code>func insertionSort(var array: Array&lt;Int&gt;) -&gt; Array&lt;Int&gt;{
+    for(var i = 1 ; i&lt;array.count;i++){
+        let key = array[i]
+        while (i&gt;0 &amp;&amp; array[i-1]&gt;key){
+            array[i] = array[i-1]
+            i--
+        }
+        array[i] = key
+    }
+    return array
+}
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./algorithms.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 算法"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>UINavigationController | 简介</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.6">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./Git.html" />
+    
+    
+    <link rel="prev" href="./UITabBarController.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.3"
+        data-chapter-title="UINavigationController"
+        data-filepath="UINavigationController.md"
+        data-basepath="."
+        data-revision="Wed Jun 29 2016 10:04:48 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="iOS.html">
+            
+                
+                    <a href="./iOS.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        iOS
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="UIImageRenderingMode.html">
+            
+                
+                    <a href="./UIImageRenderingMode.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        UIImageRenderingMode
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="UITabBarController.html">
+            
+                
+                    <a href="./UITabBarController.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        UITabBarController
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="UINavigationController.html">
+            
+                
+                    <a href="./UINavigationController.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        UINavigationController
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="Git.html">
+            
+                
+                    <a href="./Git.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Git
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="yuan_cheng_deng_lu.html">
+            
+                
+                    <a href="./yuan_cheng_deng_lu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        远程登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="algorithms.html">
+            
+                
+                    <a href="./algorithms.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        算法
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="insertion_sort.html">
+            
+                
+                    <a href="./insertion_sort.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        插入排序
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >简介</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="uinavigationcontroller">UINavigationController</h1>
+<h2 id="1-&#x4FEE;&#x6539;&#x8FD4;&#x56DE;&#x6309;&#x94AE;&#x6837;&#x5F0F;&#xFF0C;&#x548C;navigation&#x7684;title">1. &#x4FEE;&#x6539;&#x8FD4;&#x56DE;&#x6309;&#x94AE;&#x6837;&#x5F0F;&#xFF0C;&#x548C;navigation&#x7684;title</h2>
+<pre><code>UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@&quot;&#x8FD4;&#x56DE;&quot; style:UIBarButtonItemStylePlain target:nil action:nil];
+viewController.navigationItem.backBarButtonItem =backItem;
+[[UINavigationBar appearance] setTintColor:[UIColor blackColor]];//&#x5B57;&#x548C;&#x7BAD;&#x5934;&#x989C;&#x8272;
+[[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@&quot;HelveticaNeue-Thin&quot; size:18.0]}];//&#x8BBE;&#x7F6E;&#x5B57;&#x4F53;&#x6837;&#x5F0F;
+//&#x5C06;&#x8FD4;&#x56DE;&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;position&#x8BBE;&#x7F6E;&#x4E0D;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x663E;&#x793A;
+[[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(NSIntegerMin, NSIntegerMin) forBarMetrics:UIBarMetricsDefault];
+</code></pre><h2 id="2-&#x81EA;&#x5B9A;&#x4E49;&#x8FD4;&#x56DE;&#x6309;&#x94AE;">2. &#x81EA;&#x5B9A;&#x4E49;&#x8FD4;&#x56DE;&#x6309;&#x94AE;</h2>
+<h3 id="a-&#x81EA;&#x5B9A;&#x4E49;&#x8FD4;&#x56DE;&#x6309;&#x94AE;&#xFF0C;&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;backbarbuttonitem">a. &#x81EA;&#x5B9A;&#x4E49;&#x8FD4;&#x56DE;&#x6309;&#x94AE;&#xFF0C;&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;backBarButtonItem</h3>
+<p>&#x4E0B;&#x8FF0;&#x4EE3;&#x7801;&#x5199;&#x5728;push&#x524D;&#x7684;ViewController&#xFF1A;</p>
+<pre><code>[self.navigationController.navigationBar setBackIndicatorImage:[UIImage imageNamed:@&quot;back_arrow&quot;]];
+[self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:[UIImage imageNamed:@&quot;back_arrow&quot;]];
+UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@&quot;&#x8FD4;&#x56DE;&quot; style:UIBarButtonItemStylePlain target:nil action:nil];//&#x8FD9;&#x91CC;backItem&#x521D;&#x59CB;&#x5316;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;initWit    hCustomView&#xFF0C;&#x8FD9;&#x79CD;&#x65E0;&#x6548;
+self.navigationItem.backBarButtonItem = backItem;
+</code></pre><p>&#x8FD9;&#x79CD;&#x8BBE;&#x7F6E;&#x65B9;&#x5F0F;&#x8981;&#x6C42;back_arrow&#x56FE;&#x7247;&#x5927;&#x5C0F;&#x8981;&#x786E;&#x5B9A;&#xFF0C;2&#x500D;&#x56FE;&#x5927;&#x7EA6;30x30px&#xFF0C;&#x56E0;&#x6B64;&#x4F1A;&#x770B;&#x8D77;&#x6765;&#x6A21;&#x7CCA;&#xFF0C;&#x597D;&#x5904;&#x662F;&#x4E0D;&#x7528;&#x81EA;&#x5DF1;&#x5904;&#x7406;&#x70B9;&#x51FB;&#x8FD4;&#x56DE;&#x6309;&#x94AE;&#xFF0C;&#x800C;&#x4E14;&#x6709;&#x53F3;&#x5212;&#x9000;&#x51FA;&#x7684;&#x624B;&#x52BF;&#x3002;&#x4F46;&#x662F;&#x4E0B;&#x9762;b&#x70B9;&#x65B9;&#x6CD5;&#x4F1A;&#x5B8C;&#x5168;&#x89E3;&#x51B3;&#x4E0A;&#x8FF0;&#x7F3A;&#x9677;&#x3002;</p>
+<h3 id="b&#x81EA;&#x5B9A;&#x4E49;&#x8FD4;&#x56DE;&#x6309;&#x94AE;&#xFF0C;&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;leftbarbuttonitem">b.&#x81EA;&#x5B9A;&#x4E49;&#x8FD4;&#x56DE;&#x6309;&#x94AE;&#xFF0C;&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;leftBarButtonItem</h3>
+<p>&#x8BBE;&#x7F6E;leftBarButton&#x4F1A;&#x8986;&#x76D6;&#x6389;backBarButtonItem&#x3002;&#x5728;&#x5F53;&#x524D;ViewController&#x5199;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>SGHImageButton *btn = [[SGHImageButton alloc] initWithFrame:CGRectMake(0, 0, 60, 21)];//x,y&#x8BBE;&#x7F6E;&#x4E3A;0,&#x5176;&#x4ED6;&#x65E0;&#x6548;&#x679C;
+[btn image:[UIImage imageNamed:@&quot;back_arrow&quot;]];
+[btn title:@&quot;&#x54C8;&#x54C8;&quot;];
+[btn color:[UIColor blackColor]];//&#x5982;&#x679C;&#x672A;&#x663E;&#x793A;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x5B57;&#x989C;&#x8272;&#x548C;&#x80CC;&#x666F;&#x4E00;&#x6837;
+[btn font:[UIFont systemFontOfSize:14]];
+[btn addTarget:self Listener:@selector(popOut)];
+self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+UIBarButtonItem *leftSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+leftSpacer.width = -10;
+self.navigationItem.leftBarButtonItems = @[leftSpacer,backItem];
+if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+    self.navigationController.interactivePopGestureRecognizer.delegate = nil;//&#x4F5C;&#x8005;&#x8003;&#x8651;&#x662F;&#x56E0;&#x4E3A;backBarButtonItem&#x88AB;&#x8986;&#x76D6;&#x6389;&#xFF0C;&#x6240;&#x4EE5;&#x4EE3;&#x7406;&#x8BBE;&#x4E3A;&#x7A7A;
+    }//&#x8865;&#x5145;&#x53F3;&#x5212;&#x9000;&#x51FA;&#x624B;&#x52BF;
+}
+</code></pre><p>&#x4E0A;&#x8FF0;&#x7528;&#x5230;SGHImageButton&#x662F;&#x81EA;&#x5B9A;&#x4E49;&#x7EE7;&#x627F;&#x7684;UIButton,&#x53EA;&#x662F;&#x6539;&#x53D8;Button&#x4E2D;imageView&#x548C;titleLabel&#x4E2D;&#x7684;&#x6A2A;&#x5411;&#x5E76;&#x5217;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x56E0;&#x4E3A;&#x4FEE;&#x6539;ImageEdgeInsets&#x6BD4;&#x8F83;&#x590D;&#x6742;&#xFF0C;&#x800C;&#x4E14;&#x5728;BarItem&#x4E2D;&#x4F7F;&#x7528;&#x5E76;&#x6CA1;&#x592A;&#x5927;&#x6548;&#x679C;&#xFF0C;&#x6240;&#x4EE5;&#x624D;&#x4F7F;&#x7528;&#x4E86;&#x81EA;&#x5B9A;&#x4E49;Button&#x81EA;&#x5DF1;&#x5E03;&#x5C40;Button&#x4E2D;&#x7684;imageView&#x548C;titleLabel&#x3002;&#x8BF4;&#x660E;&#xFF1A;</p>
+<pre><code>[btn image:[UIImage imageNamed:@&quot;back_arrow&quot;]];
+[btn title:@&quot;&#x54C8;&#x54C8;&quot;];
+[btn color:[UIColor blackColor]];
+[btn font:[UIFont systemFontOfSize:14]];
+[btn addTarget:self Listener:@selector(popOut)];
+</code></pre><p>&#x8FD9;&#x662F;&#x81EA;&#x5B9A;&#x4E49;&#x7B80;&#x5316;&#x65B9;&#x6CD5;&#xFF0C;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x57FA;&#x672C;&#x5982;&#x4E0B;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code> [btn setImage:[UIImage imageNamed:@&quot;back_arrow&quot;] forState:UIControlStateNormal];
+</code></pre><p>&#x6CE8;&#x610F;&#xFF1A;&#x4E0A;&#x8FF0;item&#x4E2D;&#x7684;btn&#x6DFB;&#x52A0;&#x7684;&#x70B9;&#x51FB;&#x76D1;&#x542C;&#x4E0D;&#x80FD;&#x76D1;&#x542C;&#x5230;&#x53F3;&#x5212;&#x9000;&#x51FA;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5728;&#x9000;&#x51FA;&#x65F6;&#x505A;&#x4E9B;&#x64CD;&#x4F5C;&#xFF0C;&#x4E0D;&#x8981;&#x5728;&#x8FD4;&#x56DE;&#x6309;&#x94AE;&#x7684;&#x70B9;&#x51FB;&#x76D1;&#x542C;&#x91CC;&#x9762;&#x5199;&#xFF0C;&#x8981;&#x5199;&#x5728;&#x5982;&#x4E0B;&#x65B9;&#x6CD5;&#xFF1A;&#xFF08;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x76D1;&#x542C;popout&#x7684;&#x65B9;&#x6CD5;&#xFF09;,&#x6839;&#x636E;&#x9700;&#x8981;&#x4E5F;&#x53EF;&#x8BBE;&#x7F6E;DidDisppear</p>
+<pre><code>- (void)viewWillDisappear: (BOOL)animated
+{
+    [super viewWillDisappear: animated];
+    if (![[self.navigationController viewControllers] containsObject: self])
+    {
+        DLog(@&quot;popOut&quot;);//&#x9000;&#x51FA;
+    }
+}
+</code></pre><p>&#x6DFB;&#x52A0;&#x53F3;&#x5212;&#x624B;&#x52BF;&#x7684;&#x65B9;&#x6CD5;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x5982;&#x4E0B;&#x65B9;&#x6CD5;&#x66FF;&#x4EE3;&#xFF1A;
+    self.navigationItem.backBarButtonItem = backItem;
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;</p>
+<h2 id="3&#x603B;&#x7ED3;&#xFF1A;&#x5168;&#x5C40;&#x8BBE;&#x7F6E;&#x8FD4;&#x56DE;&#x6309;&#x94AE;-&#x7EE7;&#x627F;uinavigationcontroller&#x7684;&#x7C7B;">3.&#x603B;&#x7ED3;&#xFF1A;&#x5168;&#x5C40;&#x8BBE;&#x7F6E;&#x8FD4;&#x56DE;&#x6309;&#x94AE; &#x7EE7;&#x627F;UINavigationController&#x7684;&#x7C7B;</h2>
+<pre><code>//
+//  ADNavigationController.m
+//  ADCC
+//
+//  Created by &#x679C;&#x679C; on 16/6/20.
+//  Copyright &#xA9; 2016&#x5E74; &#x679C;&#x679C;. All rights reserved.
+//
+
+#import &quot;ADNavigationController.h&quot;
+
+@interface ADNavigationController ()
+
+@end
+
+@implementation ADNavigationController
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+#pragma mark - &#x91CD;&#x5199;push&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x6B64;&#x8BBE;&#x7F6E;&#x88AB;push&#x7684;viewcontroller&#x7684;&#x8FD4;&#x56DE;&#x6309;&#x94AE;
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    [self settingBackBtnStyle];
+//    [self settingleftBarButtonStyleWithViewController:viewController];
+    [self settingBackBarButtonItemStyleWithController:viewController];
+    [super pushViewController:viewController animated:animated];
+}
+
+#pragma mark - &#x4FEE;&#x6539;&#x57FA;&#x672C;&#x6837;&#x5F0F;
+- (void)settingBackBtnStyle{
+    [self.navigationBar setTintColor:[UIColor blackColor]];
+    [self.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@&quot;HelveticaNeue-Thin&quot; size:18.0]}];
+}
+
+#pragma mark - &#x4FEE;&#x6539;&#x8FD4;&#x56DE;&#x6309;&#x94AE;&#x6837;&#x5F0F;
+- (void)settingBackBarButtonItemStyleWithController:(UIViewController*)viewController{
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@&quot;&#x8FD4;&#x56DE;&quot; style:UIBarButtonItemStylePlain target:nil action:nil];
+    viewController.navigationItem.backBarButtonItem =backItem;
+    //&#x5C06;&#x8FD4;&#x56DE;&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;position&#x8BBE;&#x7F6E;&#x4E0D;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x663E;&#x793A;
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(NSIntegerMin, NSIntegerMin) forBarMetrics:UIBarMetricsDefault];
+
+}
+
+
+#pragma mark - &#x81EA;&#x5B9A;&#x4E49;&#x8FD4;&#x56DE;&#x6309;&#x94AE;&#x6837;&#x5F0F;
+- (void)settingleftBarButtonStyleWithViewController:(UIViewController*)viewController{
+
+    if (self.childViewControllers.count &gt; 0) {//&#x786E;&#x4FDD;&#x6700;&#x4E0A;&#x5C42;Navigation&#x4E0D;&#x52A0;&#x8FD4;&#x56DE;&#x6309;&#x94AE;
+        UIButton *backBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 21, 21)];
+        [backBtn backgroundImage:[UIImage imageNamed:@&quot;back_arrow&quot;]];//&#x8FD9;&#x91CC;&#x53EA;&#x8BBE;&#x7F6E;&#x7BAD;&#x5934;&#xFF0C;&#x4E0D;&#x662F;&#x6587;&#x5B57;&#xFF0C;&#x6240;&#x4EE5;&#x7528;backgroundImage
+        [backBtn addTarget:self Listener:@selector(popOut)];
+        UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+        UIBarButtonItem *leftSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+        leftSpacer.width = -15;
+        viewController.navigationItem.leftBarButtonItems = @[leftSpacer,backItem];
+        if ([self respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+            self.interactivePopGestureRecognizer.delegate = nil;
+        }
+    }
+}
+
+#pragma mark - PopOut
+- (void)popOut{
+    [self popViewControllerAnimated:YES];
+}
+
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+@end
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./UITabBarController.html" class="navigation navigation-prev " aria-label="Previous page: UITabBarController"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./Git.html" class="navigation navigation-next " aria-label="Next page: Git"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
