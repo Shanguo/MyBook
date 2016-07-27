@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="./yuan_cheng_deng_lu.html" />
+    <link rel="next" href="./远程登录.html" />
     
     
-    <link rel="prev" href="./UINavigationController.html" />
+    <link rel="prev" href="./iOS添加自定义字体.html" />
     
 
         
@@ -53,7 +53,7 @@
         data-chapter-title="Git"
         data-filepath="Git.md"
         data-basepath="."
-        data-revision="Wed Jun 29 2016 10:28:23 GMT+0800 (CST)"
+        data-revision="Wed Jul 27 2016 09:21:34 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -76,7 +76,7 @@
                 
                         <i class="fa fa-check"></i>
                         
-                        Introduction
+                        书录
                     </a>
             
             
@@ -143,6 +143,21 @@
             
         </li>
     
+        <li class="chapter " data-level="1.4" data-path="iOS添加自定义字体.html">
+            
+                
+                    <a href="./iOS添加自定义字体.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        iOS添加自定义字体
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -163,10 +178,10 @@
             
         </li>
     
-        <li class="chapter " data-level="3" data-path="yuan_cheng_deng_lu.html">
+        <li class="chapter " data-level="3" data-path="远程登录.html">
             
                 
-                    <a href="./yuan_cheng_deng_lu.html">
+                    <a href="./远程登录.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -178,26 +193,18 @@
             
         </li>
     
-        <li class="chapter " data-level="4" data-path="algorithms.html">
+        <li class="chapter " data-level="4" >
             
-                
-                    <a href="./algorithms.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.</b>
-                        
-                        算法
-                    </a>
+            <span><b>4.</b> [算法]算法.md)</span>
             
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="4.1" data-path="insertion_sort.html">
+        <li class="chapter " data-level="4.1" data-path="插入排序.html">
             
                 
-                    <a href="./insertion_sort.html">
+                    <a href="./插入排序.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -249,7 +256,14 @@
                     
                         <h1 id="git">Git</h1>
 <h2 id="&#x672C;&#x6587;&#x4E3B;&#x8981;&#x7F57;&#x5217;git&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5982;&#x6709;&#x7591;&#x95EE;&#x524D;&#x53D1;&#x90AE;&#x7BB1;&#xFF1A;857363312qqcom">&#x672C;&#x6587;&#x4E3B;&#x8981;&#x7F57;&#x5217;Git&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x5982;&#x6709;&#x7591;&#x95EE;&#x524D;&#x53D1;&#x90AE;&#x7BB1;&#xFF1A;<a href="mail.qq.com">857363312@qq.com</a></h2>
-<pre><code>#&#x81EA;&#x5B9A;&#x4E49;Git Config &#x6587;&#x4EF6;: .git/config
+<pre><code>#Git Linux&#x5B89;&#x88C5;&#xFF0C;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;
+sudo apt-get install git 
+yum install git  //&#x4F5C;&#x8005;&#x4F7F;&#x7528;CentOs&#xFF0C;&#x53EF;&#x7528;&#x8FD9;&#x4E2A;&#x5B89;&#x88C5;
+
+#&#x81EA;&#x5B9A;&#x4E49;Git Config &#x6587;&#x4EF6;: .git/config
+git config --global user.name &quot;Your Name&quot;           //git&#x5B89;&#x88C5;&#x5B8C;&#x914D;&#x7F6E;
+git config --global user.email &quot;email@example.com&quot;  //git&#x5B89;&#x88C5;&#x5B8C;&#x914D;&#x7F6E;
+ssh-keygen -t rsa -C &quot;email@example.com&quot;            //&#x7528;&#x4E8E;&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;&#x914D;&#x7F6E;&#xFF1A;git&#x751F;&#x6210;&#x516C;&#x94A5;&#x79C1;&#x94A5;&#xFF0C;&#x8FDE;&#x6309;3&#x6B21;&#x7A7A;&#x683C;&#xFF0C;&#x628A;id_rsa.pub&#x516C;&#x94A5;&#x5185;&#x5BB9;copy&#x5230;github
 git config --global color.ui true       //&#x8BBE;&#x7F6E;git&#x547D;&#x4EE4;&#x989C;&#x8272;
 git config --global alias.st status     //&#x81EA;&#x5B9A;&#x4E49;&#x7F29;&#x7565;&#x8BCD;
 
@@ -326,10 +340,10 @@ git push origin :refs/tags/v0.9 //&#x6CE8;&#x610F;&#xFF0C;&#x5148;&#x4ECE;&#x672
         </div>
 
         
-        <a href="./UINavigationController.html" class="navigation navigation-prev " aria-label="Previous page: UINavigationController"><i class="fa fa-angle-left"></i></a>
+        <a href="./iOS添加自定义字体.html" class="navigation navigation-prev " aria-label="Previous page: iOS添加自定义字体"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./yuan_cheng_deng_lu.html" class="navigation navigation-next " aria-label="Next page: 远程登录"><i class="fa fa-angle-right"></i></a>
+        <a href="./远程登录.html" class="navigation navigation-next " aria-label="Next page: 远程登录"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
